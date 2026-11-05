@@ -1,10 +1,27 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Azul profundo</title><link rel="stylesheet" href="style.css"></head>
-<body>
-<main class="wl"><h1>Setor Azul profundo</h1><p>Bem vindo!</p></main>
-<script src="app.js"></script>
-<script>
-/* Boas-vindas: dura 2,5 s e segue para as informações do Ap0. Para mudar o tempo, altere 2500 (e 2100, que é o início do desvanecer). */
-try{if(sessionStorage.ap0!=='1')location.replace('ap0.html')}catch(e){}
-setTimeout(()=>document.querySelector('main').classList.add('out'),2100);
-setTimeout(()=>location.href='ap0-info.html',2500);
-</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Azul profundo</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="wl">
+			<h1>Setor Azul profundo</h1>
+			<p>Bem vindo!</p>
+		</main>
+		<script src="app.js"></script>
+		<script>
+			/* Boas-vindas: dura 2,5 s e segue para as informações do Ap0. Para mudar o tempo, altere 2500 (e 2100, que é o início do desvanecer). */
+			try {
+				if (sessionStorage.ap0 !== "1") location.replace("ap0.html");
+			} catch (e) {}
+			setTimeout(
+				() => document.querySelector("main").classList.add("out"),
+				2100
+			);
+			setTimeout(() => (location.href = "ap0-info.html"), 2500);
+		</script>
+	</body>
+</html>
