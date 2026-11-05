@@ -1,0 +1,10 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Azul profundo</title><link rel="stylesheet" href="style.css"></head>
+<body data-t="Azul profundo">
+<div id="g" class="gate"><form autocomplete="off"><h1>Azul profundo</h1><label>Login<input id="u" autofocus></label><label>Senha<input id="p" type="password"></label><button>Entrar</button><p id="m" role="alert"></p></form></div>
+<script src="app.js"></script>
+<script>
+/* Para trocar o acesso, mude LOGIN e SENHA aqui. */
+const LOGIN='Junima_X',SENHA='1954';
+try{if(sessionStorage.ap0==='1')location.replace('ap0-info.html')}catch(e){}
+document.querySelector('#g form').onsubmit=e=>{e.preventDefault();if(u.value.trim()===LOGIN&&p.value===SENHA){try{sessionStorage.ap0='1'}catch(e){}location.href='ap0-bemvindo.html'}else m.textContent='Login ou senha incorretos'};
+</script></body></html>
